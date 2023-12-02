@@ -3,7 +3,7 @@ class CloudsModel{
   CloudsModel({required this.all});
 
   CloudsModel.fromJson(Map<String, dynamic> json) {
-     this.all= int.parse(json["all"]);
+     this.all= int.parse(json["all"].toString());
   }
 
   Map<String, dynamic> toJson() {

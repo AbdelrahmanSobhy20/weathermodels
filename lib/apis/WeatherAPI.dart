@@ -8,6 +8,8 @@ class WeatherAPI{
    if(response.statusCode>=200&&response.statusCode<=299){
      final Map<String , dynamic> jsonbody = jsonDecode(response.body);
      WeatherAPIModel weatherAPIModel = WeatherAPIModel.fromJson(jsonbody);
+     //print('status code = ${response.statusCode}');
+     //print(weatherAPIModel.list[0].dt);
      return weatherAPIModel ;
    }else{
      print('status code = ${response.statusCode}');

@@ -31,7 +31,7 @@ class ListModel{
       this.main    =MainModel.fromJson(json["main"]);
      // print(".......2....");
       this.weather=[];
-      (json["weather"] as List).forEach((element) {
+      (json["weather"]).forEach((element) {
         this.weather.add(WeatherModel.fromJson(element));
       });
      // print(".......3....");

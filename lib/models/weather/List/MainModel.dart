@@ -31,13 +31,13 @@ class MainModel{
 
       this.temp_max   = double.parse(json["temp_max"].toString()) ;
 
-      this.pressure   =int.parse(json["pressure"]);
+      this.pressure   =int.parse(json["pressure"].toString());
 
-      this.sea_level  =int.parse(json["sea_level"]);
+      this.sea_level  =int.parse(json["sea_level"].toString());
 
-      this.grnd_level =int.parse(json["grnd_level"]);
+      this.grnd_level =int.parse(json["grnd_level"].toString());
 
-      this.humidity   =int.parse(json["humidity"]);
+      this.humidity   =int.parse(json["humidity"].toString());
 
       this.temp_kf    = double.parse(json["temp_kf"].toString()) ;
 
